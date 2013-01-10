@@ -1,4 +1,6 @@
 wineForecastingFrontend.Views.headerView = Backbone.View.extend({
+  tagName: 'header',
+  className: 'main clearfix',
 
   initialize: function() {
     _.bindAll(this,"render");
