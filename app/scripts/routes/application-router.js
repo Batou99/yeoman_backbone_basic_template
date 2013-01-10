@@ -9,17 +9,19 @@ wineForecastingFrontend.Routers.ApplicationRouter = Backbone.Router.extend({
 
   initialize: function() {
     console.log('in init action'); 
-    this.start();
     var dummy = new wineForecastingFrontend.Models.ApplicationModel();
     var headerView = new wineForecastingFrontend.Views.headerView({model: dummy});
     $('#main').prepend(headerView.render().el);
+    var footerView = new wineForecastingFrontend.Views.footerView({model: dummy});
+    $('#main').append(footerView.render().el);
+    this.start();
   },
 
   home: function() {
     console.log('in home action'); 
     var dummy = new wineForecastingFrontend.Models.ApplicationModel();
     var homeView = new wineForecastingFrontend.Views.homeView({model: dummy });
-    $('#main').append(homeView.render().el);
+    $('header').after(homeView.render().el);
   }
 
 });
