@@ -12,7 +12,7 @@ wineForecastingFrontend.Routers.ApplicationRouter = Backbone.Router.extend({
     this.start();
     var dummy = new wineForecastingFrontend.Models.ApplicationModel();
     var headerView = new wineForecastingFrontend.Views.headerView({model: dummy});
-    $('body').prepend(headerView.render().el);
+    $('#main').prepend(headerView.render().el);
   },
 
   home: function() {
