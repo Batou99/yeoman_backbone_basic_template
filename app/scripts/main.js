@@ -13,3 +13,4 @@ $(document).ready(function(){
   wineForecastingFrontend.init();
   var router = new wineForecastingFrontend.Routers.ApplicationRouter();
 });
+
