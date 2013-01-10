@@ -10,7 +10,7 @@ wineForecastingFrontend.Views.homeView = Backbone.View.extend({
   template: new EJS({url: 'scripts/templates/home.ejs'}),
 
   render: function() {
-    this.$el.html(this.template.render());
+    this.$el.html(this.template.render(this.model));
     return this;
   },
 
