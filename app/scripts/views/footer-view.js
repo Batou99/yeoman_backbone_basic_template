@@ -6,7 +6,6 @@ wineForecastingFrontend.Views.footerView = Backbone.View.extend({
   initialize: function() {
     _.bindAll(this,"render");
     this.model.bind("change",this.render);
-    console.log('in the footer view');
   },
 
   template: new EJS({url: 'scripts/templates/footer.ejs'}),

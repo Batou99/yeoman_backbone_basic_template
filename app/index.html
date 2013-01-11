@@ -6,14 +6,18 @@
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title></title>
+        <title>Wine Forecasting Tool</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="styles/application.css"/>
 
     </head>
     <body>
-      <div id="main"></div>
+      <div id="main">
+        <div id="main-header"></div> 
+        <div id="main-body"></div> 
+        <div id="main-footer"></div> 
+      </div>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
@@ -27,12 +31,14 @@
         <script src="scripts/vendor/backbone-min.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/views/application-view.js"></script>
-        <script src="scripts/models/application-model.js"></script>
-        <script src="scripts/collections/application-collection.js"></script>
+        <script src="scripts/models/product-model.js"></script>
+        <script src="scripts/collections/products-collection.js"></script>
         <script src="scripts/routes/application-router.js"></script>
         <script src="scripts/views/home-view.js"></script>
         <script src="scripts/views/header-view.js"></script>
         <script src="scripts/views/footer-view.js"></script>
+        <script src="scripts/views/all_products-view.js"></script>
+        <script src="scripts/views/product-view.js"></script>
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
